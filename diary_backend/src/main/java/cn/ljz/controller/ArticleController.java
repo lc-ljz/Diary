@@ -1,6 +1,6 @@
 package cn.ljz.controller;
 
-import cn.ljz.model.Article;
+import cn.ljz.model.entity.Article;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

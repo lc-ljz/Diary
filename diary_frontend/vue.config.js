@@ -16,6 +16,7 @@ module.exports = defineConfig({
     plugins: [
       AutoImport({
         resolvers: [ElementPlusResolver()], // 解析 Element Plus 组件
+        vueTemplate: true,
       }),
       Components({
         resolvers: [ElementPlusResolver()], // 解析 Element Plus 组件

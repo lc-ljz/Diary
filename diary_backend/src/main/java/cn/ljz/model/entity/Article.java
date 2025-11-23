@@ -1,4 +1,4 @@
-package cn.ljz.model;
+package cn.ljz.model.entity;
 
 public class Article {
 

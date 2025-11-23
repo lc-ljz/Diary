@@ -1,13 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import WriteArticleView from '../components/WriteArticleView.vue'
+import ArticleView from '../components/ArticleView.vue'
 import SettingView from '../components/SettingView.vue'
 import HomeView from '../components/HomeView.vue'
+import VideoPlayView from '../components/VideoPlayView.vue'
+import VideoView from '../components/VideoView.vue'
+import LLMView from '../components/LLMView.vue'
 import LoginRegisterView from '../components/LoginRegisterView.vue'
 
 const routes = [
   { path: "/", redirect: "/HomeView" },
   { path: '/HomeView', name: 'HomeView', component: HomeView },
   { path: '/WriteArticleView', name: 'WriteArticleView', component: WriteArticleView},
+  { path: '/ArticleView', name: 'ArticleView', component: ArticleView},
+  { path: '/VideoPlayView', name:'VideoPlayView', component: VideoPlayView},
+  { path: '/VideoView', name:'VideoView', component: VideoView},
+  { path: '/LLMView', name:'LLMView', component: LLMView},
   { path: '/SettingView', name: 'SettingView', component: SettingView, meta: { requiresAuth: true } },
   { path: "/login", name: "LoginRegister", component: LoginRegisterView },
 ]
